@@ -44,62 +44,7 @@ class FileController extends GetxController {
     }
   }
 
-  /*Future createFile({required String file, title, note}) async {
-    try {
-      var data = {
-        //data is a variable holding an object {'content': content}
-        'file': file,
-        'title': title,
-        'note': note,
-      };
-      var response = await http.post(Uri.parse('${url}file-upload'),
-          headers: {
-            'Accept': 'application/json',
-            'Authorization': 'Bearer ${box.read('token')}',
-          },
-          body: data);
-      if (response == 201) {
-        print(json.decode(response.body));
-      } else {}
-    } catch (e) {
-      print(e.toString());
-    }
-  }*/
-
-  /*Future createFile({
-    required String filePath,
-    String title = '',
-    String note = '',
-  }) async {
-    try {
-      File file = File(filePath);
-      String fileName = file.path.split('/').last;
-      String? fileExtension = lookupMimeType(fileName);
-      var request = http.MultipartRequest(
-        'POST',
-        Uri.parse('${url}file-upload'),
-      );
-      request.headers['Accept'] = 'application/json';
-      request.headers['Authorization'] = 'Bearer ${box.read('token')}';
-      request.fields['title'] = title;
-      request.fields['note'] = note;
-      request.files.add(await http.MultipartFile.fromPath(
-        'file',
-        file.path,
-        contentType: MediaType.parse(fileExtension!),
-      ));
-
-      var response = await http.Response.fromStream(await request.send());
-
-      if (response.statusCode == 201) {
-        print(json.decode(response.body));
-      } else {
-        print(json.decode(response.body));
-      }
-    } catch (e) {
-      print(e.toString());
-    }
-  }*/
+ 
   Future<FileModel?> createFile({
     required String filePath,
     String title = '',
