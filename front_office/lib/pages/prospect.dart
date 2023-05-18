@@ -1020,7 +1020,7 @@ class ProspectScreenState extends State<ProspectScreen> {
           color: Colors.red,
           child: Center(
               child: OpenStreetMapSearchAndPick(
-                  center: LatLong(36.8354925, 10.24886719352586),
+                  center: LatLong(50,50),
                   buttonColor: Colors.blue,
                   buttonText: 'Choisir la Localisation',
                   onPicked: (pickedData) {
@@ -1071,7 +1071,7 @@ class ProspectScreenState extends State<ProspectScreen> {
         SlackNotifier('T....../B....../x......');
     slack.send(
       'message',
-      channel: 'general',
+      channel: 'channel_Name',
     );
   }
 }
