@@ -11,7 +11,7 @@ import 'package:http/http.dart' as http;
 class FileController extends GetxController {
   Rx<List<FileModel>> files = Rx<List<FileModel>>([]);
   final isLoading = false.obs;
-  String url = 'http://192.168.156.167:80/api/';
+  String url = 'URL/api/';
   final box = GetStorage();
 
   @override
