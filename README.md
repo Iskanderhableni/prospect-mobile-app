@@ -11,7 +11,8 @@ The app was built using Flutter, a cross-platform mobile app development
 framework, and leverages the GetX dependency for efficient state management. The
 app communicates with a RESTful API built with Laravel, using the HTTP package for
 seamless data exchange. Laravel Sanctum was used for API authentication, ensuring
-the security of the app's data.
+the security of the app's data. 
+
 check the prototype here :
 https://xd.adobe.com/view/5a3fcf96-418b-404b-aa99-e1d5f70df50a-0f6c/screen/cd6f33f6-75bb-4e9c-bc26-ad907e003e2d/
 
