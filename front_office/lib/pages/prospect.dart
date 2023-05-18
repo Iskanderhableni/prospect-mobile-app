@@ -1068,7 +1068,7 @@ class ProspectScreenState extends State<ProspectScreen> {
 
   void _slackNotifier() {
     final slack =
-        SlackNotifier('T057EPD1R26/B057BR03A9K/xRYuZnUD53Rumm3ZEfVzaoF8');
+        SlackNotifier('T....../B....../x......');
     slack.send(
       'message',
       channel: 'general',
