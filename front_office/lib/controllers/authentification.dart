@@ -13,7 +13,7 @@ class AuthentificationController extends GetxController {
   final token = ''.obs;
   final box = GetStorage();
 
-  String url = 'http://192.168.156.167:80/api/';
+  String url = 'URL/api/';
 
   Future<void> register({
     required String name,
