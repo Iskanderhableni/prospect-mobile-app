@@ -1035,8 +1035,8 @@ class ProspectScreenState extends State<ProspectScreen> {
   }
 
   Future<void> sendMail() async {
-    String username = "lezartdigital@gmail.com"; // Your Email
-    String password = "ydjispmqhdzyxzuq"; // Your Email Password
+    String username = ""; // Your Email
+    String password = ""; // Your Email Password
 
     //Create Gmail Server
     // ignore: deprecated_member_use
