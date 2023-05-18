@@ -34,7 +34,7 @@ class _FileUploadScreenState extends State<FileUploadScreen> {
       return;
     }
 
-    final url = Uri.parse('http://192.168.156.167:80/api/file-upload');
+    final url = Uri.parse('URL/api/file-upload');
     final request = http.MultipartRequest('POST', url);
 
     request.fields['title'] = _titleController.text;
