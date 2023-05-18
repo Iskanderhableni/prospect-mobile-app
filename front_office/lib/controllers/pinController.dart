@@ -42,38 +42,7 @@ class PinController extends GetxController {
     }
   }
 
-  /*Future createPost({
-    required String content,
-  }) async {
-    try {
-      var data = {
-        'content': content,
-      };
-
-      var response = await http.post(
-        Uri.parse('${url}pins/store'),
-        headers: {
-          'Accept': 'application/json',
-          'Authorization': 'Bearer ${box.read('token')}',
-        },
-        body: data,
-      );
-
-      if (response.statusCode == 201) {
-        print(json.decode(response.body));
-      } else {
-        Get.snackbar(
-          'Error',
-          json.decode(response.body)['message'],
-          snackPosition: SnackPosition.TOP,
-          backgroundColor: Colors.red,
-          colorText: Colors.white,
-        );
-      }
-    } catch (e) {
-      print(e.toString());
-    }
-  }*/
+ 
 
   Future createpin({required String content}) async {
     try {
